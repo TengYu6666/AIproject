@@ -127,7 +127,7 @@ python import_excel_to_mysql.py
 #### 🌐 Web 界面（推荐）
 
 ```bash
-python stock_analysis_assistant-3.py
+python stock_analysis_assistant.py
 ```
 
 系统将自动启动 Web 服务器，在浏览器中访问提示的地址（通常为 http://localhost:8000）即可使用。
@@ -140,7 +140,7 @@ python stock_analysis_assistant.py
 
 #### 📟 命令行模式
 
-在 `stock_analysis_assistant.py` 或 `stock_analysis_assistant-3.py` 中将 `app_gui()` 或 `app_webui()` 改为 `app_tui()`：
+在 `stock_analysis_assistant.py` 中将 `app_gui()` 或 `app_webui()` 改为 `app_tui()`：
 
 ```python
 if __name__ == "__main__":
@@ -150,7 +150,7 @@ if __name__ == "__main__":
 然后运行：
 
 ```bash
-python stock_analysis_assistant-3.py
+python stock_analysis_assistant.py
 ```
 ## 📁 项目结构
 
@@ -158,7 +158,7 @@ python stock_analysis_assistant-3.py
 .
 ├── stock_data_downloader.py         # 数据下载模块
 ├── import_excel_to_mysql.py         # 数据导入模块
-├── stock_analysis_assistant-3.py    # 智能分析助手（V3.0，推荐使用）
+├── stock_analysis_assistant.py      # 智能分析助手
 ├── faq.txt                          # RAG 知识库数据源
 ├── requirements.txt                 # 依赖列表
 └── README.md                        # 项目说明文档
@@ -265,4 +265,5 @@ export MYSQL_PORT="3306"                    # 可选，默认 3306
 - [tushare](https://tushare.pro/)：提供股票数据 API
 - [qwen-agent](https://github.com/QwenLM/qwen-agent)：提供 AI 助手技术支持
 - [Matplotlib](https://matplotlib.org/)：提供数据可视化支持
+
 - [Pandas](https://pandas.pydata.org/)：提供数据处理功能
