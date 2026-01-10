@@ -27,12 +27,6 @@
 2. 安装 [CMake](https://cmake.org/download/)
 3. 安装 [Visual Studio](https://visualstudio.microsoft.com/zh-hans/downloads/) (推荐 2019 或更高版本)
 
-#### Linux
-
-```bash
-sudo apt-get update
-sudo apt-get install -y libopencv-dev cmake g++
-```
 
 ### 2. 克隆项目
 
@@ -90,4 +84,5 @@ tuilimoxing/
 └── banana1.jpg            # 测试图像
 
 ```
+
 
