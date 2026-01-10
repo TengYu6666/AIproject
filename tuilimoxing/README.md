@@ -45,13 +45,6 @@ cd build
 cmake ..
 make
 ```
-
-#### 使用 Visual Studio
-
-1. 打开 `tuilimoxing.slnx` 或 `tuilimoxing.vcxproj`
-2. 选择编译配置 (Debug/Release)
-3. 点击 "生成" 按钮
-
 ## 使用方法
 
 ### 准备文件
@@ -63,26 +56,27 @@ make
 ### 运行程序
 
 ```bash
-./tuilimoxing <model-path> <image-path> <csv-path>
+./ONNX Model Inference with OpenCV<model-path> <image-path> <csv-path>
 ```
 
 示例：
 
 ```bash
-./tuilimoxing resnet18_imagenet.onnx banana1.jpg imagenet_class_index.csv
+./ONNX Model Inference with OpenCV resnet18_imagenet.onnx banana1.jpg imagenet_class_index.csv
 ```
 
 ## 项目结构
 
 ```
-tuilimoxing/
-├── README.md            # 项目说明文档
-├── tuilimoxing/         # 主项目目录
-│   ├── main.cpp        # 主要源代码
-├── imagenet_class_index.csv  # ImageNet 类别索引
-├── resnet18_imagenet.onnx    # ONNX 模型文件
-└── banana1.jpg            # 测试图像
+ONNX Model Inference with OpenCV/
+├── README.md                                 # 项目说明文档
+├── ONNX Model Inference with OpenCV/         # 主项目目录
+│   ├── main.cpp                              # 主要源代码
+├── imagenet_class_index.csv                  # ImageNet 类别索引
+├── resnet18_imagenet.onnx                    # ONNX 模型文件
+└── banana1.jpg                               # 测试图像
 
 ```
+
 
 
